@@ -72,30 +72,20 @@ PRODUCT_PACKAGES += \
     MobileFeliCaWebPlugin \
     MobileFeliCaWebPluginBoot \
     PixelCameraServicesCrosshatch \
-    VZWAPNLib \
     uimremoteclient \
     uimremoteserver \
     AmbientSensePrebuilt \
-    AppDirectedSMSService \
     CarrierServices \
     CarrierSettings \
-    CarrierWifi \
-    ConnMO \
-    DCMO \
-    DMService \
-    DeviceIntelligenceNetworkPrebuilt \
     DevicePersonalizationPrebuiltPixel3 \
     DiagMon \
     EuiccGoogle \
     HardwareInfo \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
-    OemDmTrigger \
     SprintDM \
     SprintHM \
-    TetheringEntitlement \
     USCCDM \
-    WfcActivation \
     com.qualcomm.qti.services.secureui \
     QtiTelephonyService \
     atfwd \
@@ -103,13 +93,9 @@ PRODUCT_PACKAGES += \
     uceShimService \
     CNEService \
     qcrilmsgtunnel \
-    CarrierSetup \
     EuiccSupportPixel \
     EuiccSupportPixelPermissions \
-    MyVerizonServices \
     OBDM_Permissions \
-    RilConfigService \
-    grilservice \
     obdm_stub \
     libhwinfo \
     uimremoteclientlibrary \
@@ -117,8 +103,8 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     RadioConfigLib \
     com.android.hotwordenrollment.common.util \
-    com.google.android.camera.extensions \
-    google-ril
+    com.google.android.camera.extensions
+
 PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/product/etc/CarrierSettings/a1_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/a1_at.pb \
     vendor/google/crosshatch/proprietary/product/etc/CarrierSettings/ahamo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ahamo_jp.pb \

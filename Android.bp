@@ -72,6 +72,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "VZWAPNLib",
+	owner: "google",
+	apk: "proprietary/product/app/VZWAPNLib/VZWAPNLib.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "uimremoteclient",
 	owner: "google",
 	apk: "proprietary/product/app/uimremoteclient/uimremoteclient.apk",
@@ -106,6 +117,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "AppDirectedSMSService",
+	owner: "google",
+	apk: "proprietary/product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "CarrierServices",
 	owner: "google",
 	apk: "proprietary/product/priv-app/CarrierServices/CarrierServices.apk",
@@ -121,6 +144,66 @@ android_app_import {
 	name: "CarrierSettings",
 	owner: "google",
 	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CarrierWifi",
+	owner: "google",
+	apk: "proprietary/product/priv-app/CarrierWifi/CarrierWifi.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ConnMO",
+	owner: "google",
+	apk: "proprietary/product/priv-app/ConnMO/ConnMO.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DCMO",
+	owner: "google",
+	apk: "proprietary/product/priv-app/DCMO/DCMO.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DMService",
+	owner: "google",
+	apk: "proprietary/product/priv-app/DMService/DMService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DeviceIntelligenceNetworkPrebuilt",
+	owner: "google",
+	apk: "proprietary/product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -202,6 +285,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "OemDmTrigger",
+	owner: "google",
+	apk: "proprietary/product/priv-app/OemDmTrigger/OemDmTrigger.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "SprintDM",
 	owner: "google",
 	apk: "proprietary/product/priv-app/SprintDM/SprintDM.apk",
@@ -226,10 +321,34 @@ android_app_import {
 }
 
 android_app_import {
+	name: "TetheringEntitlement",
+	owner: "google",
+	apk: "proprietary/product/priv-app/TetheringEntitlement/TetheringEntitlement.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "USCCDM",
 	owner: "google",
 	apk: "proprietary/product/priv-app/USCCDM/USCCDM.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "WfcActivation",
+	owner: "google",
+	apk: "proprietary/product/priv-app/WfcActivation/WfcActivation.apk",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -317,6 +436,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "CarrierSetup",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/CarrierSetup/CarrierSetup.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "EuiccSupportPixel",
 	owner: "google",
 	apk: "proprietary/system_ext/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk",
@@ -341,9 +472,45 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MyVerizonServices",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "OBDM_Permissions",
 	owner: "google",
 	apk: "proprietary/system_ext/priv-app/OBDM_Permissions/OBDM_Permissions.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "RilConfigService",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/RilConfigService/RilConfigService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "grilservice",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/grilservice/grilservice.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -410,6 +577,13 @@ dex_import {
 	name: "com.google.android.camera.extensions",
 	owner: "google",
 	jars: ["proprietary/system_ext/framework/com.google.android.camera.extensions.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "google-ril",
+	owner: "google",
+	jars: ["proprietary/system_ext/framework/google-ril.jar"],
 	system_ext_specific: true,
 }
 
@@ -553,3 +727,4 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
+
